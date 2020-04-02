@@ -1,37 +1,44 @@
 const cipher = { 
-  encode(offset, message) { 
-    let encodedMessage = ""
-  
-    for (let i in message) {
-      if (message.charCodeAt(i) >= 65 && message.charCodeAt(i) <= 90) {
-        let encodeFormulaUpperCase = ((message.charCodeAt(i) - 65 + offset) % 26) + 65;
-        encodedMessage += String.fromCharCode(encodeFormulaUpperCase)
+  encode: function (chave, mensagem) { //chave de criptografia
+    if (typeof mensagem !== "string") {
+      throw new TypeError();
+    }
+    
+    let mensagemCriptografada = ""
+    for (let i in mensagem) {
+      if (mensagem.charCodeAt(i) >= 65 && mensagem.charCodeAt(i) <= 90) {
+        let criptografiaUpperCase = ((mensagem.charCodeAt(i) - 65 + chave) % 26) + 65;
+        mensagemCriptografada += String.fromCharCode(criptografiaUpperCase);
       
-      } else if (message.charCodeAt(i) >= 97 && message.charCodeAt(i) <= 122) {
-        let encodeFormulaLowerCase = ((message.charCodeAt(i) - 97 + offset) % 26) + 97;
-        encodedMessage += String.fromCharCode(encodeFormulaLowerCase);
+      } else if (mensagem.charCodeAt(i) >= 97 && mensagem.charCodeAt(i) <= 122) {
+        let criptografiaLowerCase = ((mensagem.charCodeAt(i) - 97 + chave) % 26) + 97;
+        mensagemCriptografada += String.fromCharCode(criptografiaLowerCase);
       
       } else{
-        encodedMessage += String.fromCharCode(message.charCodeAt(i))
+        mensagemCriptografada += String.fromCharCode(mensagem.charCodeAt(i));
       }
     }
-  return encodedMessage;   
+  return mensagemCriptografada;   
   },
   
   
-  decode(offset, message) {
+  decode: function (chave, mensagem) {
+    if (typeof mensagem !== "string") {
+      throw new TypeError();
+    }
+    
     let decodeMessage = ""
     for (let i in mensagem) {
       if (mensagem.charCodeAt(i) >= 65 && mensagem.charCodeAt(i) <= 90) {
         let criptografiaUpperCase = ((mensagem.charCodeAt(i) - 90 - chave) % 26) + 90;
         decodeMessage += String.fromCharCode(criptografiaUpperCase)
       
-      } else if (message.charCodeAt(i) >= 97 && message.charCodeAt(i) <= 122) {
-        let encodeFormulaLowerCase = ((message.charCodeAt(i) - 122 - offset) % 26) + 122;
-        decodeMessage += String.fromCharCode(encodeFormulaLowerCase);
+      } else if (mensagem.charCodeAt(i) >= 97 && mensagem.charCodeAt(i) <= 122) {
+        let criptografiaLowerCase = ((mensagem.charCodeAt(i) - 122 - chave) % 26) + 122;
+        decodeMessage += String.fromCharCode(criptografiaLowerCase);
       
       } else{
-        decodeMessage += String.fromCharCode(message.charCodeAt(i))
+        decodeMessage += String.fromCharCode(mensagem.charCodeAt(i))
       }
     }
   return decodeMessage;
