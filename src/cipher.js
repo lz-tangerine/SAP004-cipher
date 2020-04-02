@@ -1,5 +1,5 @@
-const cipher =
-  function encode(offset, message) {
+const cipher = { 
+  encode(offset, message) { 
     let encodedMessage = ""
   
     for (let i in message) {
@@ -15,12 +15,13 @@ const cipher =
         encodedMessage += String.fromCharCode(message.charCodeAt(i))
       }
     }
-    return encodedMessage;
-  };
-
-  function decode(offset, message) {
-    let decodeMessage = "";
+  return encodedMessage;   
+  },
   
+  
+  decode(offset, message) {
+    let decodeMessage = ""
+
     for (let i in message) {
       if (message.charCodeAt(i) >= 65 && message.charCodeAt(i) <= 90) {
         let encodeFormulaUpperCase = ((message.charCodeAt(i) - 90 - offset) % 26) + 90;
@@ -34,7 +35,7 @@ const cipher =
         decodeMessage += String.fromCharCode(message.charCodeAt(i))
       }
     }
-    return decodeMessage;
+  return decodeMessage;
   }
-
-export default cipher;
+}
+export default cipher
