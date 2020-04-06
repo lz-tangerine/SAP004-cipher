@@ -3,7 +3,7 @@ body {
 }
 
 body video{ /*aqui linka a imagem que está no body do HTML e faz a centralização da imagem*/
-    display: flow-root;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
