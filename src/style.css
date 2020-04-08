@@ -1,9 +1,24 @@
-body {
+/* body {
     background-color: black;
+} */
+
+#boasVindas{
+    /* background-color: #0B0000; */
+    background-color: rgb(121, 121, 121);
 }
 
 #videoSkull{ /*aqui linka a imagem que está no body do HTML e faz a centralização da imagem*/
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#tv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mensagem{
+    text-align: center;
 }
