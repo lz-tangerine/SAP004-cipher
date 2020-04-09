@@ -7,7 +7,4 @@ function usuario(){
     window.location.href = "boasVindas.html"
 }
 
-videoSkull.addEventListener("click", usuario);
-
-
 export default user
