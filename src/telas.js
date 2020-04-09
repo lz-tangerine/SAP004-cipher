@@ -1,10 +1,11 @@
-
-const videoSkull = document.getElementById("videoSkull");
-let user =""
+function loadPage() {
+    document.getElementById("videoSkull").addEventListener("click", usuario);
+}
 
 function usuario(){
-    user = prompt("D1GIT3 S3U USU4R1O")
+    let user = prompt("D1GIT3 S3U USU4R1O").toUpperCase()
+    localStorage.setItem("user", user)
     window.location.href = "boasVindas.html"
 }
 
-export default user
+loadPage()
