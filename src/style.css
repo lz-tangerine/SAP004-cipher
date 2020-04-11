@@ -1,10 +1,5 @@
-/* body {
+body {
     background-color: black;
-} */
-
-#boasVindas{
-    /* background-color: #0B0000; */
-    background-color: rgb(121, 121, 121);
 }
 
 #videoSkull{ /*aqui linka a imagem que está no body do HTML e faz a centralização da imagem*/
@@ -13,12 +8,74 @@
     margin-right: auto;
 }
 
-#tv{
+.fundo{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.mensagem{
+h3 {
+    font-size: 24px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px;    
     text-align: center;
+}
+
+p {
+    width: auto;
+    font-size: 18px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    letter-spacing: 0.3px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    height: 620px;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    background-color: black;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;   
+    flex-direction: column;
+}
+
+textarea {
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    resize: none;
+}
+
+input {
+    text-align: center;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: auto;
+    height: 30px;
+    margin: 0px 0px 0px;
+}
+
+button {
+    font-size: 18px;
+    color:  gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 4px;
 }

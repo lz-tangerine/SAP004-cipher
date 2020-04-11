@@ -1,7 +1,7 @@
 import cipher from './cipher.js';
 
 let user = localStorage.getItem("user")
-document.getElementById("user").innerHTML = `B3M V1ND0 ${user}`
+document.getElementById("user").innerHTML = `BEM VINDO ${user}`
 
 const botaoEncode = document.getElementById("botaoEncode")
 const botaoDecode = document.getElementById("botaoDecode")
@@ -20,8 +20,5 @@ function decode (){
     document.getElementById("mensagemCriptografada").innerHTML = cipher.decode(chave, mensagem)
 }
 
-
 botaoEncode.addEventListener("click", encode)
 botaoDecode.addEventListener("click", decode)
-
-// console.log(cipher);
