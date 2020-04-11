@@ -15,7 +15,7 @@ Lá o usuário poderá:
 * Cifrar ou decifrar uma mensagem;
 * Selecionar o offset (que é a chave de criptografia) que inicia em 2 e vai até 66.
 
-<img src="/home/carol/Documentos/Laboratória/SAP004-cipher/src/C1PH3R.png" alt="Imagem do site">
+<img src="https://raw.githubusercontent.com/lz-tangerine/SAP004-cipher/master/src/C1PH3R.png" alt="Imagem do site">
 
 **Importante:** A aplicação não usa offsets negativos e letras com acentuação, simbolos e numéros mantém suas posições originais.
 
@@ -45,6 +45,6 @@ Foi usado o **CSS** para dar estilo e forma ao site o tornando mais agradavel vi
 
 Foram usados testes unitários para garantir a funcionalidade.
 
-Acesse aqui: [C1PHER_C3S4R](https://github.com/lz-tangerine/SAP004-cipher/src)
+Acesse aqui: [C1PHER_C3S4R](https://lz-tangerine.github.io/SAP004-cipher/src/)
 
 
