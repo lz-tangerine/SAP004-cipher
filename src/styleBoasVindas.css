@@ -1,11 +1,7 @@
 body {
     background-color: black;
-}
-
-#videoSkull{ /*aqui linka a imagem que está no body do HTML e faz a centralização da imagem*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 .fundo{
@@ -17,17 +13,14 @@ body {
 h3 {
     font-size: 24px;
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 10px;    
-    text-align: center;
+
 }
 
 p {
     width: auto;
     font-size: 18px;
     color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-right: 10px;
@@ -55,19 +48,15 @@ textarea {
     width: 400px;
     height: 30px;
     font-size: 20px;
-    text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 15px;
     color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     resize: none;
 }
 
 input {
-    text-align: center;
     font-size: 15px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: auto;
     height: 30px;
     margin: 0px 0px 0px;
@@ -76,6 +65,5 @@ input {
 button {
     font-size: 18px;
     color:  gray;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 4px;
 }

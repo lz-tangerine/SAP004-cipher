@@ -1,59 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C43S4R C1Ph3R</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C43S4R C1Ph3R</title>
+  <link rel="stylesheet" href="styleBoasVindas.css" />
 </head>
 
 <body>
+  <div style="position: relative;">
+    <img src="decodificando.gif" alt="numeros codificando" width="1278" height="619">
 
-    <div style="position: relative;">
-        <img src="decodificando.gif" alt="numeros codificando" width="1278" height="619">
-        
-        <div style="position:absolute; top:0px; left: 0px; right: 0px;">
+    <div style="position:absolute; top:0px; left: 0px; right: 0px;">
+      <main class="main">
 
-            <main class="main">                
-                
-                <form>                    
-                    <div>
-                        <h3 id="user"></h3>
-                        <p>INSIRA A MENSAGEM ABAIXO E ESCOLHA O OFFSET.</p>                                  
-                    </div>
-                        
-                    <div>
-                        <textarea id="mensagem" placeholder="1NS1R4 4 M3NS4G3M 4QUI"></textarea>    
-                    </div>
-        
-                    <div>
-                        <input type="number" min="2" placeholder="0FFS3T" id="offset" aria-disabled="false">
-                    </div>
-                    
-                    <div>
-                        <p>CLIQUE PARA CIFRAR OU DECIFRAR A MENSAGEM</p>
-                    </div>
-        
-                    <div>
-                        <button id="botaoEncode">CR1PT0GR4F14</button>
-                        <button id="botaoDecode">D3SCR1PT0GR4F1A</button>                   
-                    </div>
-                    
-                    <div>
-                        <textarea id="mensagemCriptografada" disabled></textarea>
-                    </div>           
-                
-        
-                </form>
-                
-            </main>
-        </div>
+        <form>
+          <div>
+            <h3 id="user"></h3>
+            <p>INSIRA A MENSAGEM ABAIXO E ESCOLHA O OFFSET.</p>
+          </div>
+
+          <div>
+            <textarea id="mensagem" placeholder="1NS1R4 4 M3NS4G3M 4QUI"></textarea>
+          </div>
+          <div>
+            <input type="number" min="2" placeholder="0FFS3T" id="offset" aria-disabled="false">
+          </div>
+          <div>
+            <p>CLIQUE PARA CIFRAR OU DECIFRAR A MENSAGEM</p>
+          </div>
+          <div>
+            <button id="botaoEncode">CR1PT0GR4F14</button>
+            <button id="botaoDecode">D3SCR1PT0GR4F1A</button>
+          </div>
+          <div>
+            <textarea id="mensagemCriptografada" disabled></textarea>
+          </div>
+        </form>
+
+      </main>
     </div>
-          
-
-    <script src="index.js" type="module"></script>
-
-
+  </div>
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>
