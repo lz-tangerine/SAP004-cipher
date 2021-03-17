@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <title>C43S4R C1pH3R</title>
-    <link rel="stylesheet" href="styleIndex.css" />
-  </head>  
-  <body>   
-    <div class="positionRelative">
-      <img id="imagemSnow" src="snow.jpg" alt="fundo respingo de tinta" width="1278" height="619">        
-        <div class="positionAbsolute">
-        <video id="videoSkull" width="820" height="620" autoplay="autoplay">
-          <source src="skull.mp4" type="video/mp4">
-          <embed width="820" height="620" src="skull.mp4">
-        </video>
-        </div>
-    </div>    
-    <script src="telas.js" type="module"></script>  
-  </body>
-  </html>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css" />
+  <title>C43S4R C1Ph3R</title>
+</head>
+
+<body>
+  <div class="background">
+    <img class="fundo" src="./assets/image/decodificando.gif" alt="numeros codificando">
+  </div>
+  
+  <main>
+    <form>
+      
+      <section>
+        <p>INSIRA A MENSAGEM ABAIXO E ESCOLHA O OFFSET.</p>
+      </section>
+
+      <section>
+        <textarea id="mensagem" placeholder="1NS1R4 4 M3NS4G3M 4QUI"></textarea>
+      </section>
+      
+      <section>
+        <input type="number" min="2" placeholder="0FFS3T" id="offset" aria-disabled="false">
+      </section>
+      
+      <section>
+        <p>CLIQUE PARA CIFRAR OU DECIFRAR A MENSAGEM</p>
+      </section>
+      
+      <section>
+        <button id="botaoEncode">CR1PT0GR4F14</button>
+        <button id="botaoDecode">D3SCR1PT0GR4F1A</button>
+      </section>
+      
+      <section>
+        <textarea id="mensagemCriptografada" disabled></textarea>
+      </section>
+    
+    </form>
+  
+  </main>
+  <script src="../js/index.js" type="module"></script>
+</body>
+
+</html>
+
 

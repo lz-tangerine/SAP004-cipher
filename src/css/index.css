@@ -1,3 +1,7 @@
+.background {
+    position: absolute;
+}
+
 body {
     background-color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -28,11 +32,13 @@ p {
     letter-spacing: 0.3px;
 }
 
-.main{
+main{
+    position: relative;
     display: flex;
     justify-content: center;
     height: 620px;
     align-items: center;
+
 }
 
 form {
